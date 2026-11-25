@@ -4,7 +4,7 @@
 /*          A Theme For Trilium (https://github.com/TriliumNext/Trilium)         */
 /* ============================================================================= */
 /* ----------------------------------------------------------------------------- */
-/* FONT DECLARATIONS */
+/* FONT DECLARATIONS
 /* ----------------------------------------------------------------------------- */
 /* Fira Code */
 @font-face {
@@ -37,142 +37,142 @@
 }
 #trilium-app {
 /* ----------------------------------------------------------------------------- */
-/* PALETTE */
+/* PALETTE
 /* ----------------------------------------------------------------------------- */
---color-blue: #436173;
---color-blue-alpha: #1f3a5fd9;
---color-blue-ice: #eaf0f7;
-/* --color-teal: #2a9d8f; */
---color-teal-alpha: #2a9d8f66;
-/* --color-teal-alpha-dark: #2a9d8fd9; */
-/* --color-teal-alpha-light: #2a9d8f24; */
---color-teal-ice: #f2f7f6;
---color-slate: #667780;
---color-charcoal: #3c4649;
-/* --color-brown: #b18238; */
-/* --color-amber: #e4b95b; */
-/* --color-amber-dark: #d9a53a; */
-/* --color-amber-ink: #5a4a26; */
-/* --color-amber-wash: #e4b95b1f; */
---color-cream: #e7e1d6;
---color-orange: #ef8f5a;
-/* --color-orange-ink: #a84e20; */
---color-red: #d45d3f;
---color-red-ice: #f6e3dc;
---color-peach: #dc703b1f;
---color-white: #ffffff;
---color-canvas: #fffefc;
---color-gray: #cfd2d4;
---color-gray-text: #1a1d21;
---color-gray-ink: #565b60;
---color-gray-light: #f4f4f2;
---color-gray-wash: rgba(180, 184, 188, 0.18);
---color-gray-light-text: #8b9095;
---color-gray-medium: #7a8186;
---color-gray-light-buttons: #e7e9eb;
---color-gray-light-buttons-text: #3a3f44;
---color-gray-dark: #585f65;
---color-paper: #fcfcfb;
---color-paper-light: #fdfdfc;
-/* --color-paper-cool: #fbfcfd; */
---color-shadow: rgba(28, 32, 36, 0.14);
---color-shadow-light: rgba(28, 32, 36, 0.07);
+  --color-blue: #436173;
+  --color-blue-alpha: #1f3a5fd9;
+  --color-blue-ice: #eaf0f7;
+  /* --color-teal: #2a9d8f; */
+  --color-teal-alpha: #2a9d8f66;
+  /* --color-teal-alpha-dark: #2a9d8fd9; */
+  /* --color-teal-alpha-light: #2a9d8f24; */
+  --color-teal-ice: #f2f7f6;
+  --color-slate: #667780;
+  --color-charcoal: #3c4649;
+  /* --color-brown: #b18238; */
+  /* --color-amber: #e4b95b; */
+  /* --color-amber-dark: #d9a53a; */
+  /* --color-amber-ink: #5a4a26; */
+  /* --color-amber-wash: #e4b95b1f; */
+  --color-cream: #e7e1d6;
+  --color-orange: #ef8f5a;
+  /* --color-orange-ink: #a84e20; */
+  --color-red: #d45d3f;
+  --color-red-ice: #f6e3dc;
+  --color-peach: #dc703b1f;
+  --color-white: #ffffff;
+  --color-canvas: #fffefc;
+  --color-gray: #cfd2d4;
+  --color-gray-text: #1a1d21;
+  --color-gray-ink: #565b60;
+  --color-gray-light: #f4f4f2;
+  --color-gray-wash: rgba(180, 184, 188, 0.18);
+  --color-gray-light-text: #8b9095;
+  --color-gray-medium: #7a8186;
+  --color-gray-light-buttons: #e7e9eb;
+  --color-gray-light-buttons-text: #3a3f44;
+  --color-gray-dark: #585f65;
+  --color-paper: #fcfcfb;
+  --color-paper-light: #fdfdfc;
+  /* --color-paper-cool: #fbfcfd; */
+  --color-shadow: rgba(28, 32, 36, 0.14);
+  --color-shadow-light: rgba(28, 32, 36, 0.07);
 
 
-/* ----------------------------------------------------------------------------- */
-/* COLOR VARIABLES */
-/* ----------------------------------------------------------------------------- */
---color-bg: var(--color-canvas);
---color-surface: var(--color-gray-light);
---color-surface-raised: var(--color-paper);
---color-border: var(--color-gray);
---color-border-soft: var(--color-gray-light-buttons);
---color-text: var(--color-gray-text);
---color-text-heading: var(--color-gray-ink);
---color-text-secondary: var(--color-gray-dark);
---color-text-muted: var(--color-gray-medium);
---color-text-faint: var(--color-gray-light-text);
---color-text-dim: var(--color-gray-light-buttons-text);
---color-text-code: var(--color-gray-ink);
---color-text-on-dark: var(--color-teal-ice);
---color-brand: var(--color-blue);
---color-brand-wash: var(--color-teal-alpha);
---color-link: var(--color-charcoal);
---color-link-note: var(--color-blue);
---color-link-note-hover: var(--color-blue-alpha);
---color-accent: var(--color-red);
---color-accent-soft: var(--color-orange);
---color-accent-contrast: var(--color-red-ice);
---color-selection: var(--selection-background-color);
---color-chip: var(--color-cream);
---color-control-bg: var(--color-gray-light-buttons);
---color-control-fg: var(--color-gray-light-buttons-text);
-/* --color-checked: var(--color-blue-alpha); */
---color-secondary: var(--color-blue);
+  /* ----------------------------------------------------------------------------- */
+  /* COLOR VARIABLES
+  /* ----------------------------------------------------------------------------- */
+  --color-bg: var(--color-canvas);
+  --color-surface: var(--color-gray-light);
+  --color-surface-raised: var(--color-paper);
+  --color-border: var(--color-gray);
+  --color-border-soft: var(--color-gray-light-buttons);
+  --color-text: var(--color-gray-text);
+  --color-text-heading: var(--color-gray-ink);
+  --color-text-secondary: var(--color-gray-dark);
+  --color-text-muted: var(--color-gray-medium);
+  --color-text-faint: var(--color-gray-light-text);
+  --color-text-dim: var(--color-gray-light-buttons-text);
+  --color-text-code: var(--color-gray-ink);
+  --color-text-on-dark: var(--color-teal-ice);
+  --color-brand: var(--color-blue);
+  --color-brand-wash: var(--color-teal-alpha);
+  --color-link: var(--color-charcoal);
+  --color-link-note: var(--color-blue);
+  --color-link-note-hover: var(--color-blue-alpha);
+  --color-accent: var(--color-red);
+  --color-accent-soft: var(--color-orange);
+  --color-accent-contrast: var(--color-red-ice);
+  --color-selection: var(--selection-background-color);
+  --color-chip: var(--color-cream);
+  --color-control-bg: var(--color-gray-light-buttons);
+  --color-control-fg: var(--color-gray-light-buttons-text);
+  /* --color-checked: var(--color-blue-alpha); */
+  --color-secondary: var(--color-blue);
 
-/* ----------------------------------------------------------------------------- */
-/* GRADIENTS & THEME-OVERRIDES */
-/* ----------------------------------------------------------------------------- */
---gradient-blue-light: linear-gradient(150deg, var(--color-slate) 0%, var(--color-charcoal) 100%);
---gradient-paper-light: linear-gradient(168deg, var(--color-paper-light-cool) 0%, var(--color-paper-light) 100%);
---launcher-pane-background-color: var(--gradient-blue-light);
---ck-color-image-caption-background: var(--color-shadow-light);
---main-background-color: var(--color-canvas);
---note-list-view-search-result-highlight-color: var(--color-brand);
---selection-background-color: var(--color-peach);
---muted-text-color: var(--color-text-muted);
---badge-active-content-background-color: var(--color-surface-raised);
---menu-text-color: var(--color-text-heading);
---link-color: var(--color-accent);
+  /* ----------------------------------------------------------------------------- */
+  /* GRADIENTS & THEME-OVERRIDES
+  /* ----------------------------------------------------------------------------- */
+  --gradient-blue-light: linear-gradient(150deg, var(--color-slate) 0%, var(--color-charcoal) 100%);
+  --gradient-paper-light: linear-gradient(168deg, var(--color-paper-light-cool) 0%, var(--color-paper-light) 100%);
+  --launcher-pane-background-color: var(--gradient-blue-light);
+  --ck-color-image-caption-background: var(--color-shadow-light);
+  --main-background-color: var(--color-canvas);
+  --note-list-view-search-result-highlight-color: var(--color-brand);
+  --selection-background-color: var(--color-peach);
+  --muted-text-color: var(--color-text-muted);
+  --badge-active-content-background-color: var(--color-surface-raised);
+  --menu-text-color: var(--color-text-heading);
+  --link-color: var(--color-accent);
 
-/* ----------------------------------------------------------------------------- */
-/* BORDER & SHADOW VARIABLES */
-/* ----------------------------------------------------------------------------- */
---border-radius-small: 2px;
---border-radius-medium: 4px;
---border-radius-tabs: var(--border-radius-small); /* war: 2px (identisch zu --border-radius-small) */
---border-radius-large: 6px;
---border-standard: 1px solid var(--color-border);
---border-accent: 2px solid var(--color-accent);
---border-accent-alt: 2px solid var(--color-brand);
---border-accent-muted: 2px solid var(--color-gray-dark);
---border-accent-light: 1px dotted var(--color-blue-ice);
---shadow-light: 3px 4px 3px -3px var(--color-shadow-light);
---shadow-standard: 3px 4px 3px -3px var(--color-shadow);
---shadow-accented: 2px 2px 5px -2px var(--color-gray-dark);
---shadow-90deg: 0 3px 5px -3px var(--color-shadow);
---shadow-90deg-inset: 0 9px 4px -9px inset var(--color-shadow-light);
---shadow-embedded-notes: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  /* ----------------------------------------------------------------------------- */
+  /* BORDER & SHADOW VARIABLES
+  /* ----------------------------------------------------------------------------- */
+  --border-radius-small: 2px;
+  --border-radius-medium: 4px;
+  --border-radius-tabs: var(--border-radius-small); /* war: 2px (identisch zu --border-radius-small) */
+  --border-radius-large: 6px;
+  --border-standard: 1px solid var(--color-border);
+  --border-accent: 2px solid var(--color-accent);
+  --border-accent-alt: 2px solid var(--color-brand);
+  --border-accent-muted: 2px solid var(--color-gray-dark);
+  --border-accent-light: 1px dotted var(--color-blue-ice);
+  --shadow-light: 3px 4px 3px -3px var(--color-shadow-light);
+  --shadow-standard: 3px 4px 3px -3px var(--color-shadow);
+  --shadow-accented: 2px 2px 5px -2px var(--color-gray-dark);
+  --shadow-90deg: 0 3px 5px -3px var(--color-shadow);
+  --shadow-90deg-inset: 0 9px 4px -9px inset var(--color-shadow-light);
+  --shadow-embedded-notes: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
-/* ----------------------------------------------------------------------------- */
-/* FONT VARIABLES */
-/* ----------------------------------------------------------------------------- */
---text-font-weight: 300;
---font-weight-bold: 550;
---font-code: 'Fira Code', 'Source Code Pro', Courier, Monospace;
+  /* ----------------------------------------------------------------------------- */
+  /* FONT VARIABLES
+  /* ----------------------------------------------------------------------------- */
+  --text-font-weight: 300;
+  --font-weight-bold: 550;
+  --font-code: 'Fira Code', 'Source Code Pro', Courier, Monospace;
 
-/* ----------------------------------------------------------------------------- */
-/* DEFAULT TRILIUM/THEME OVERRIDES */
-/* ----------------------------------------------------------------------------- */
---main-font-family: "Geist", 'Open Sans', 'Source Sans Pro', 'Liberation Sans', Arial, sans-serif;
---tree-font-family: var(--main-font-family);
---detail-font-family: var(--main-font-family);
---monospace-font-family: var(--font-code);
---ck-font-family: var(--main-font-family);
---ck-font-face: var(--main-font-family);
---ck-color-link-selected-background: var(--color-gray-wash);
---ck-content-font-color: var(--color-gray-text);
---main-font-size: 100%;
---tree-font-size: 100%;
---detail-font-size: 100%;
---monospace-font-size: 100%;
---main-text-color: var(--color-text);
---badge-read-only-background-color: var(--color-secondary);
---task-checkbox-done-color: var(--color-secondary);
+  /* ----------------------------------------------------------------------------- */
+  /* DEFAULT TRILIUM/THEME OVERRIDES
+  /* ----------------------------------------------------------------------------- */
+  --main-font-family: "Geist", 'Open Sans', 'Source Sans Pro', 'Liberation Sans', Arial, sans-serif;
+  --tree-font-family: var(--main-font-family); 
+  --detail-font-family: var(--main-font-family);
+  --monospace-font-family: var(--font-code);
+  --ck-font-family: var(--main-font-family);
+  --ck-font-face: var(--main-font-family);
+  --ck-color-link-selected-background: var(--color-gray-wash);
+  --ck-content-font-color: var(--color-gray-text);
+  --main-font-size: 100%;
+  --tree-font-size: 100%;
+  --detail-font-size: 100%;
+  --monospace-font-size: 100%;
+  --main-text-color: var(--color-text);
+  --badge-read-only-background-color: var(--color-secondary);
+  --task-checkbox-done-color: var(--color-secondary);
 }
 
 /* ----------------------------------------------------------------------------- */
-/* RESET */
+/* RESET
 /* ----------------------------------------------------------------------------- */
 /* Excalidraw fixes */
 #trilium-app #root-widget #center-pane .excalidraw-wrapper :is(h1,
@@ -185,11 +185,11 @@ h6) {
   padding: unset;
 }
 #trilium-app #root-widget #center-pane .excalidraw-wrapper .App-menu__left .panelColumn {
-row-gap: 0;
+  row-gap: 0;
 }
 
 /* ----------------------------------------------------------------------------- */
-/* HYPERLINKS */
+/* HYPERLINKS
 /* ----------------------------------------------------------------------------- */
 /*a,a:visited,a:hover,*/
 .note-detail a,
@@ -206,7 +206,7 @@ div.tooltip a,
 li a,
 li a:visited,
 li a:hover
-{
+ {
   color: var(--color-link) !important;
   border-radius: 0;
 }
@@ -223,28 +223,29 @@ a:hover,
 .dashboard-widget-header) .note-book-title,
 #trilium-app :is(.ck.ck-button,
 :where(a).ck.ck-button) .ck-button__label,
-
-#trilium-app a:is(.external, [href^="http://"], [href^="https://"]):not(.no-arrow, .link-embed-card)::after {
-color: var(--color-control-fg);
+#trilium-app a:is(.external,
+[href^="http://"],
+[href^="https://"]):not(.no-arrow,
+.link-embed-card)::after {
+  color: var(--color-control-fg);
 }
-
 /* ----------------------------------------------------------------------------- */
-/* GUTTER */
+/* GUTTER
 /* ----------------------------------------------------------------------------- */
 #trilium-app #root-widget .gutter-horizontal {
-background: var(--color-surface);
-/*! width: 5px !important; */
-border-left: var(--border-standard);
-border-radius: 0;
-padding-right: 0.5rem;
-border-right: var(--border-standard);
+  background: var(--color-surface);
+  /*! width: 5px !important; */
+  border-left: var(--border-standard);
+  border-radius: 0;
+  padding-right: 0.5rem;
+  border-right: var(--border-standard);
 }
 
 /* ----------------------------------------------------------------------------- */
-/* LAUNCHER */
+/* LAUNCHER
 /* ----------------------------------------------------------------------------- */
 #trilium-app #launcher-pane {
-background: var(--gradient-blue-light);
+  background: var(--gradient-blue-light);
 }
 #trilium-app #launcher-pane :is(.component,
 .component button,
@@ -252,166 +253,166 @@ background: var(--gradient-blue-light);
   color: var(--color-text-on-dark);
 }
 #trilium-app #launcher-pane .global-menu-button {
-border-radius: 0;
+  border-radius: 0;
 }
 #trilium-app #launcher-pane .global-menu-button svg g path {
-fill: var(--color-white);
+  fill: var(--color-white);
 }
 #trilium-app #launcher-pane .component button:hover {
-background-color: var(--color-gray-wash);
+  background-color: var(--color-gray-wash);
 }
 #trilium-app #launcher-pane .icon-action:hover {
-background-color: var(--color-text);
+  background-color: var(--color-text);
 }
 
 /* ----------------------------------------------------------------------------- */
-/* LEFT PANE */
+/* LEFT PANE
 /* ----------------------------------------------------------------------------- */
 #trilium-app #left-pane {
-background-color: var(--color-bg);
+  background-color: var(--color-bg);
 }
 
 /* ----------------------------------------------------------------------------- */
-/* LEFT PANE - TREE */
+/* LEFT PANE - TREE
 /* ----------------------------------------------------------------------------- */
 #trilium-app #root-widget #left-pane .fancytree-node {
-border-top: 1px dotted lightgray;
-border-radius: 0;
-font-weight: 350;
+  border-top: 1px dotted lightgray;
+  border-radius: 0;
+  font-weight: 350;
 }
 #trilium-app #root-widget #left-pane span.fancytree-node:hover {
-background-color: var(--color-selection);
-border: 1px solid var(--color-accent-soft);
-color: var(--color-accent);
+  background-color: var(--color-selection);
+  border: 1px solid var(--color-accent-soft);
+  color: var(--color-accent);
 }
 #trilium-app #root-widget #left-pane span.fancytree-node.fancytree-active {
-background-color: var(--color-gray-wash) !important;
-border: none !important;
-color: var(--color-accent);
+  background-color: var(--color-gray-wash) !important;
+  border: none !important;
+  color: var(--color-accent);
 }
 /* multiple selected nodes */
 #trilium-app #root-widget #left-pane .tree-wrapper .tree span.fancytree-selected {
-background-color: var(--color-selection) !important;
-color: var(--color-accent);
+  background-color: var(--color-selection) !important;
+  color: var(--color-accent);
 }
 #trilium-app #root-widget #left-pane .tree-wrapper .tree span.fancytree-selected .fancytree-custom-icon::before {
-border: none;
+  border: none;
 }
 #trilium-app #root-widget #left-pane .tree-wrapper .tree span.fancytree-node.protected:after {
-font-family: 'boxicons' !important;
-content: "";
-margin-inline-end: 5px;
+  font-family: 'boxicons' !important;
+  content: "";
+  margin-inline-end: 5px;
 }
 #trilium-app #root-widget #left-pane .tree-wrapper .tree span.fancytree-node.protected > span.fancytree-custom-icon {
-filter: none;
+  filter: none;
 }
 
 /* ----------------------------------------------------------------------------- */
-/* LEFT PANE - QUICK SEARCH */
+/* LEFT PANE - QUICK SEARCH
 /* ----------------------------------------------------------------------------- */
 #trilium-app #left-pane .quick-search {
-border-bottom: var(--border-standard);
-align-content: center;
-align-items: center;
-box-shadow: var(--shadow-90deg);
+  border-bottom: var(--border-standard);
+  align-content: center;
+  align-items: center;
+  box-shadow: var(--shadow-90deg);
 }
 /* ----------------------------------------------------------------------------- */
-/* RIGHT PANE - HEADER */
+/* RIGHT PANE - HEADER
 /* ----------------------------------------------------------------------------- */
 #trilium-app #right-pane .right-pane-header {
-padding-bottom: 5px;
-min-height: 50px;
+  padding-bottom: 5px;
+  min-height: 50px;
 }
 #trilium-app #right-pane .right-pane-header button.active {
-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 /* ----------------------------------------------------------------------------- */
-/* RIGHT PANE - BODY */
+/* RIGHT PANE - BODY
 /* ----------------------------------------------------------------------------- */
 #trilium-app #right-pane .right-pane-tab-body {
-margin-top: 5px;
+  margin-top: 5px;
 }
 
 /* ----------------------------------------------------------------------------- */
-/* RIGHT PANE - CARDS & WIDGETS */
+/* RIGHT PANE - CARDS & WIDGETS
 /* ----------------------------------------------------------------------------- */
 #trilium-app #right-pane .right-pane-tab-body .card.widget {
-border: 1px dashed var(--color-text-faint) !important;
-border-radius: var(--border-radius-small);
-background-color: var(--color-surface);
-margin: 5px;
-padding: 5px;
+  border: 1px dashed var(--color-text-faint) !important;
+  border-radius: var(--border-radius-small);
+  background-color: var(--color-surface);
+  margin: 5px;
+  padding: 5px;
 }
 
 /* ----------------------------------------------------------------------------- */
-/* RIGHT PANE - CARDS & WIDGETS - HEADER */
+/* RIGHT PANE - CARDS & WIDGETS - HEADER
 /* ----------------------------------------------------------------------------- */
 #trilium-app #right-pane .card .card-header {
-align-items: center;
-border-radius: 0;
-font-weight: var(--font-weight-bold);
+  align-items: center;
+  border-radius: 0;
+  font-weight: var(--font-weight-bold);
 }
 #trilium-app #right-pane .card.collapsed .card-header {
-border: none;
+  border: none;
 }
 #trilium-app #right-pane .card .card-header .card-header-title {
-font-size: .85rem;
+  font-size: .85rem;
 }
 #trilium-app #right-pane .card .card-header button {
-font-size: .85rem;
-color: var(--color-text-muted);
-/*! margin-bottom: 3px; */
+  font-size: .85rem;
+  color: var(--color-text-muted);
+  /*! margin-bottom: 3px; */
 }
 
 /* ----------------------------------------------------------------------------- */
-/* RIGHT PANE - CARDS & WIDGETS - NOTE PATHS */
+/* RIGHT PANE - CARDS & WIDGETS - NOTE PATHS
 /* ----------------------------------------------------------------------------- */
 #trilium-app #right-pane #notePaths .note-paths-widget li {
-padding-left: 5px;
+  padding-left: 5px;
 }
 #trilium-app #right-pane #notePaths .note-path-list,
 #trilium-app #right-pane #backlinks .backlinks-items {
-margin-bottom: 0;
+  margin-bottom: 0;
 }
 #trilium-app #right-pane #notePaths .note-paths-widget li:not(:last-of-type) {
-border-bottom: 1px dotted var(--color-border);
+  border-bottom: 1px dotted var(--color-border);
 }
 #trilium-app #right-pane #notePaths .note-paths-widget li::before {
-display: none;
+  display: none;
 }
 
 /* ----------------------------------------------------------------------------- */
-/* RIGHT PANE - CARDS & WIDGETS - BACKLINKS */
+/* RIGHT PANE - CARDS & WIDGETS - BACKLINKS
 /* ----------------------------------------------------------------------------- */
 #trilium-app #right-pane #backlinks .card-body .tn-backlinks-widget ul.backlinks-items li {
-margin-bottom: 0;
+  margin-bottom: 0;
 }
 #trilium-app #right-pane #backlinks .card-body .tn-backlinks-widget ul.backlinks-items li:not(:last-of-type) {
-border-bottom: 1px dotted var(--color-border);
-margin-bottom: .5rem;
+  border-bottom: 1px dotted var(--color-border);
+  margin-bottom: .5rem;
 }
 
 /* ----------------------------------------------------------------------------- */
-/* RIGHT PANE - CARDS & WIDGETS - BUTTONS */
+/* RIGHT PANE - CARDS & WIDGETS - BUTTONS
 /* ----------------------------------------------------------------------------- */
 #trilium-app #right-pane .llm-chat-input-form .llm-chat-send-btn.icon-action {
-background-color: var(--color-accent); /*llm chat button*/
-color: var(--color-accent-contrast);
+  background-color: var(--color-accent); /*llm chat button*/
+  color: var(--color-accent-contrast);
 }
 #trilium-app #right-pane .llm-chat-input-form .llm-chat-send-btn.icon-action.disabled {
-background-color: var(--color-border); /*llm chat button*/
+  background-color: var(--color-border); /*llm chat button*/
 }
 
 /* ----------------------------------------------------------------------------- */
-/* CARD WIDGETS & INCLUDES */
+/* CARD WIDGETS & INCLUDES
 /* ----------------------------------------------------------------------------- */
 #trilium-app .icon-action {
-color: var(--color-control-fg);
-font-size: 1.2rem;
+  color: var(--color-control-fg);
+  font-size: 1.2rem;
 }
 #trilium-app #center-pane .card-header .attribute-run-count {
-padding-top: 0;
+  padding-top: 0;
 }
 #trilium-app :where(.tn-card,
 .tn-card-frame) {
@@ -421,11 +422,11 @@ padding-top: 0;
 }
 #trilium-app .tn-card-frame,
 #trilium-app .tn-card-body .tn-card-section {
---card-padding-block:5px;
---card-padding-inline: 10px;
-padding: var(--card-padding-block) var(--card-padding-inline);
-/*border: 1px solid var(--color-surface-raised) !important;*/
-/*! background-color: var(--color-surface-raised); */
+  --card-padding-block:5px;
+  --card-padding-inline: 10px;
+  padding: var(--card-padding-block) var(--card-padding-inline);
+  /*border: 1px solid var(--color-surface-raised) !important;*/
+  /*! background-color: var(--color-surface-raised); */
 }
 #trilium-app #center-pane .tn-card-frame.note-book-card .note-book-content .rendered-content .ck-content :is(p,
 li,
@@ -458,73 +459,73 @@ h5) {
   color: var(--color-charcoal);
 }
 #trilium-app #center-pane .note-list.grid-view .note-list-wrapper div.rendered-content a {
-color: var(--color-link-note);
+  color: var(--color-link-note);
 }
 #trilium-app #center-pane .tn-card-frame.note-book-card .note-book-content .rendered-content {
-padding: .5rem .1rem .1rem 1rem;
+  padding: .5rem .1rem .1rem 1rem;
 }
 
 /* ----------------------------------------------------------------------------- */
-/* TABS */
+/* TABS
 /* ----------------------------------------------------------------------------- */
 #trilium-app #rest-pane .tab-row-container {
-border-bottom: 1px solid var(--color-border);
-padding-bottom: 0;
-height: 45px !important;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0;
+  height: 45px !important;
 }
 #trilium-app #rest-pane .tab-row-container .note-tab .note-tab-wrapper {
-background-color: var(--color-surface);
-border-radius: 5px;
-color: var(--color-text-faint);
+  background-color: var(--color-surface);
+  border-radius: 5px;
+  color: var(--color-text-faint);
 }
 #trilium-app #rest-pane .tab-row-widget .tab-row-widget-container .note-tab .note-tab-wrapper > div {
-align-items: center;
-display: flex;
+  align-items: center;
+  display: flex;
 }
 #trilium-app #rest-pane .tab-row-widget .tab-row-widget-container .note-tab .note-tab-wrapper .note-tab-close {
-justify-content: center;
+  justify-content: center;
 }
 #trilium-app #rest-pane .tab-row-widget .tab-row-widget-container .note-tab .note-tab-wrapper .note-tab-close:hover {
-color: var(--color-text-dim);
-cursor: pointer;
+  color: var(--color-text-dim);
+  cursor: pointer;
 }
 #trilium-app #rest-pane .tab-row-widget .tab-row-widget-container .note-tab[active] .note-tab-wrapper {
-background: var(--gradient-blue-light);
-color: var(--color-text-on-dark);
-font-weight: 550;
+  background: var(--gradient-blue-light);
+  color: var(--color-text-on-dark);
+  font-weight: 550;
 }
 /* Split Note Tab Header Separator*/
 #trilium-app .note-tab-wrapper .note-tab-title .note-tab-segment {
-margin-right: 5px;
+  margin-right: 5px;
 }
 #trilium-app .note-tab-wrapper .note-tab-title .note-tab-segment-active ~ .note-tab-segment,
 .note-tab-wrapper .note-tab-title .note-tab-segment ~ .note-tab-segment-active {
   margin-left: 5px;
 }
 #trilium-app .note-tab .note-tab-wrapper {
-border-top: 3px solid var(--workspace-tab-background-color);
+  border-top: 3px solid var(--workspace-tab-background-color);
 }
 
 /* ----------------------------------------------------------------------------- */
-/* TOOLTIPS - TITLE */
+/* TOOLTIPS - TITLE
 /* ----------------------------------------------------------------------------- */
 #trilium-app .tooltip-inner .note-tooltip-content .note-tooltip-title {
-border-bottom: 1px solid var(--color-border);
-padding: 0.3rem 0.5rem;
-margin-bottom: 0.1rem;
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.3rem 0.5rem;
+  margin-bottom: 0.1rem;
 }
 #trilium-app .tooltip-inner .note-tooltip-content .note-tooltip-title a {
-color: var(--color-text-secondary) !important;
+  color: var(--color-text-secondary) !important;
 }
 #trilium-app .tooltip-inner .note-tooltip-content .note-tooltip-title a .note-path {
-color: var(--color-text-muted);
-margin-left: .5rem;
+  color: var(--color-text-muted);
+  margin-left: .5rem;
 }
 /* ----------------------------------------------------------------------------- */
-/* TOOLTIPS - BODY */
+/* TOOLTIPS - BODY
 /* ----------------------------------------------------------------------------- */
 #trilium-app div.tooltip-inner div.note-tooltip-content .rendered-content div {
-font-size: .95rem;
+  font-size: .95rem;
 }
 #trilium-app div.tooltip.note-tooltip.show .tooltip-inner .rendered-content,
 #trilium-app div.tooltip.note-tooltip.show .tooltip-inner .rendered-content :is(p,
@@ -535,177 +536,177 @@ div) {
 }
 #trilium-app div.tooltip .tooltip-inner .note-tooltip-attributes span.rendered-note-attributes,
 #trilium-app div.tooltip .tooltip-inner .note-tooltip-attributes span.rendered-note-attributes a.reference-link {
-font-size: .85rem;
-color: var(--color-text-secondary) !important;
+  font-size: .85rem;
+  color: var(--color-text-secondary) !important;
 }
 
 /* ----------------------------------------------------------------------------- */
-/* FORM ELEMENTS - TOGGLE SWITCHES */
+/* FORM ELEMENTS - TOGGLE SWITCHES
 /* ----------------------------------------------------------------------------- */
 #trilium-app #root-widget #center-pane button:not(.bx).btn-primary {
-background-color: var(--color-brand);
-color: var(--color-white);
+  background-color: var(--color-brand);
+  color: var(--color-white);
 }
 #trilium-app #center-pane .switch-widget .switch-button.on {
-background-color: var(--color-accent);
+  background-color: var(--color-accent);
 }
 #trilium-app #center-pane .switch-widget .switch-button.off {
-background-color: var(--color-control-bg);
+  background-color: var(--color-control-bg);
 }
 #trilium-app #center-pane .switch {
-background: none;
+  background: none;
 }
 #trilium-app #center-pane .switch .slider {
-/*slider background*/
-background-color: var(--color-control-bg);
-box-shadow: var(--shadow-light);
-border-radius: var(--border-radius-small);
+  /*slider background*/
+  background-color: var(--color-control-bg);
+  box-shadow: var(--shadow-light);
+  border-radius: var(--border-radius-small);
 }
 #trilium-app #center-pane .switch .slider::before {
-/*slider off state*/
-background-color: var(--color-control-fg);
-border-radius: var(--border-radius-small);
+  /*slider off state*/
+  background-color: var(--color-control-fg);
+  border-radius: var(--border-radius-small);
 }
 #trilium-app #center-pane .switch .slider.checked::before {
-/*slider on state*/
-background-color: var(--color-brand);
-border-radius: var(--border-radius-small);
+  /*slider on state*/
+  background-color: var(--color-brand);
+  border-radius: var(--border-radius-small);
 }
 #trilium-app input.form-control:focus {
-box-shadow:none;
+  box-shadow:none;
 }
 
 /* ----------------------------------------------------------------------------- */
-/* NOTES - PROTECTED */
+/* NOTES - PROTECTED
 /* ----------------------------------------------------------------------------- */
 #trilium-app #center-pane .split-note-container-widget .component.note-split.protected.active {
-border: 3px dashed var(--color-slate);
+  border: 3px dashed var(--color-slate);
 }
 
 /* ----------------------------------------------------------------------------- */
-/* NOTES - HEADER - Split View */
+/* NOTES - HEADER - Split View
 /* ----------------------------------------------------------------------------- */
 #trilium-app #center-pane .title-row .note-icon-widget {
-margin: 0;
-padding: 5px 5px 5px 10px;
+  margin: 0;
+  padding: 5px 5px 5px 10px;
 }
 #trilium-app #center-pane .title-row .note-icon-widget button {
-color: var(--color-text);
+  color: var(--color-text);
 }
 #trilium-app #center-pane .title-row .note-title-widget {
-align-self: center;
-display: flex;
-align-items: center;
+  align-self: center;
+  display: flex;
+  align-items: center;
 }
 #trilium-app #center-pane .title-row .note-title-widget input.note-title {
-color: var(--color-text-heading);
-font-weight: 600;
-font-size: 1.85rem;
-box-shadow: none;
+  color: var(--color-text-heading);
+  font-weight: 600;
+  font-size: 1.85rem;
+  box-shadow: none;
 }
 #trilium-app #center-pane .promoted-attribute-cell {
-margin: 3px 10px;
+  margin: 3px 10px;
 }
 #trilium-app #center-pane .tn-chip {
-background-color: var(--color-chip);
-border-radius: var(--border-radius-medium);
+  background-color: var(--color-chip);
+  border-radius: var(--border-radius-medium);
 }
 
 /* ----------------------------------------------------------------------------- */
-/* NOTES - HEADER - Full View */
+/* NOTES - HEADER - Full View
 /* ----------------------------------------------------------------------------- */
 #trilium-app #center-pane .split-note-container-widget .note-icon {
-color: var(--color-accent);
+  color: var(--color-accent);
 }
 #trilium-app #center-pane .split-note-container-widget .scrolling-container .inline-title {
-color: var(--color-text);
+  color: var(--color-text);
 }
 #trilium-app #center-pane .split-note-container-widget .scrolling-container .inline-title input {
-color: var(--color-text-heading);
-font-weight: 600;
+  color: var(--color-text-heading);
+  font-weight: 600;
 }
 #trilium-app #center-pane .split-note-container-widget .scrolling-container .note-title-widget input.note-title.protected {
-text-shadow: none;
+  text-shadow: none;
 }
 #trilium-app #center-pane .split-note-container-widget .scrolling-container .note-title-widget input.note-title.protected::before {
-content: "🔒";
+  content: "🔒";
 }
 
 /* ----------------------------------------------------------------------------- */
-/* NOTES - HEADER - Title Actions & Promoted Attributes */
+/* NOTES - HEADER - Title Actions & Promoted Attributes
 /* ----------------------------------------------------------------------------- */
 #trilium-app #center-pane .title-actions {
-background-color: var(--color-surface);
-border-top: 1px dashed var(--color-text-faint);
-border-bottom: 1px dashed var(--color-text-faint);
-color: var(--color-text-heading);
-gap: 0;
-justify-self: self-end;
-margin-bottom: 1rem;
-margin-top: 1.3rem;
-padding-block: 7px 3px;
+  background-color: var(--color-surface);
+  border-top: 1px dashed var(--color-text-faint);
+  border-bottom: 1px dashed var(--color-text-faint);
+  color: var(--color-text-heading);
+  gap: 0;
+  justify-self: self-end;
+  margin-bottom: 1rem;
+  margin-top: 1.3rem;
+  padding-block: 7px 3px;
 }
 #trilium-app #center-pane .title-actions .note-type-switcher {
-top: 0;
-margin-left: 10px;
-font-size: .85rem;
+  top: 0;
+  margin-left: 10px;
+  font-size: .85rem;
 }
 #trilium-app #center-pane .title-actions .note-type-switcher .intro {
-font-weight: 400;
-text-transform: uppercase;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 #trilium-app #center-pane .title-actions > .note-type-switcher:empty {
-display: none;
+  display: none;
 }
 #trilium-app #center-pane .note-type-switcher .ext-badge,
 #trilium-app #center-pane .note-type-switcher .dropdown-badge button {
-color: var(--color-text-code);
+  color: var(--color-text-code);
 }
 #trilium-app #center-pane .ext-badge {
-color: var(--color-text-heading);
+  color: var(--color-text-heading);
 }
 #trilium-app #center-pane .ext-badge.read-only-badge,
 #trilium-app #center-pane .ext-badge.temporarily-editable-badge {
-color: var(--color-text-on-dark);
+  color: var(--color-text-on-dark);
 }
 #trilium-app #center-pane .title-actions a.badge {
-font-weight: normal;
-font-size: .85rem;
+  font-weight: normal;
+  font-size: .85rem;
 }
 #trilium-app #center-pane .title-actions a.badge:hover {
-background-color: var(--color-brand-wash);
-border-bottom: 0;
+  background-color: var(--color-brand-wash);
+  border-bottom: 0;
 }
 #trilium-app #center-pane .title-actions .collapsible-title {
-text-transform: uppercase;
-font-size: 0.85rem;
+  text-transform: uppercase;
+  font-size: 0.85rem;
 }
 #trilium-app #center-pane .title-actions .collapsible-body {
-font-size: .85rem;
-font-weight: 400;
-margin-block: 0.3rem;
+  font-size: .85rem;
+  font-weight: 400;
+  margin-block: 0.3rem;
 }
 #trilium-app #center-pane .title-actions .edited-notes .no-edited-notes-found {
-margin-left: 10px;
-font-weight: 400;
+  margin-left: 10px;
+  font-weight: 400;
 }
 #trilium-app #center-pane .promoted-attributes-container label {
-text-transform: uppercase;
-font-size: .85rem;
-font-weight: 400;
+  text-transform: uppercase;
+  font-size: .85rem;
+  font-weight: 400;
 }
 #trilium-app #center-pane .component.split-note-container-widget .component.scrolling-container .promoted-attributes-container input {
-font-size: .85rem;
+  font-size: .85rem;
 }
 #trilium-app #center-pane .component.split-note-container-widget .component.scrolling-container .title-actions .collapsible-inner-body {
-padding-top: 0.1rem;
+  padding-top: 0.1rem;
 }
 
 /* ----------------------------------------------------------------------------- */
-/* NOTES - BODY */
+/* NOTES - BODY
 /* ----------------------------------------------------------------------------- */
 #trilium-app #center-pane div.note-detail div.note-detail-editable-text {
-padding: .5rem;
+  padding: .5rem;
 }
 #trilium-app #center-pane .note-detail :is(h2,
 h3,
@@ -726,115 +727,115 @@ form) {
 }
 /* headings inside rendered (readonly) include/board content: no top margin */
 #trilium-app #center-pane .note-detail .note-detail-readonly-text .rendered-content h3 {
-margin-top: 0;
+  margin-top: 0;
 }
 #trilium-app #center-pane .note-detail a {
-color: var(--color-link-note);
-border-bottom: 1px solid var(--color-accent);
+  color: var(--color-link-note);
+  border-bottom: 1px solid var(--color-accent);
 }
 #trilium-app #center-pane .note-detail a:hover {
-text-decoration: none;
-color: var(--color-link-note-hover);
+  text-decoration: none;
+  color: var(--color-link-note-hover);
 }
 #trilium-app #center-pane .note-detail-editable-text .note-detail-editable-text-editor.ck.ck-content pre,
 #trilium-app #center-pane .CodeMirror pre code {
-color: var(--color-link-note) !important;
-padding: 1.5rem;
-margin: 1.0rem auto 2.5rem;
-background-color: var(--color-surface);
-border: 1px dotted var(--color-border);
+  color: var(--color-link-note) !important;
+  padding: .5rem;
+  margin: 1.0rem auto 0.3rem;
+  background-color: var(--color-surface);
+  border: 1px dotted var(--color-border);
 }
 
 /* ----------------------------------------------------------------------------- */
-/* NOTES - BODY - Tables */
+/* NOTES - BODY - Tables
 /* ----------------------------------------------------------------------------- */
 #trilium-app #center-pane .note-detail table,
 #trilium-app #center-pane figure.table table {
-border: var(--border-light);
+  border: var(--border-light);
 }
 /* ----------------------------------------------------------------------------- */
-/* NOTES - BODY - Figures and Images */
+/* NOTES - BODY - Figures and Images
 /* ----------------------------------------------------------------------------- */
 #trilium-app #center-pane .split-note-container-widget .note-detail figure > figcaption {
-font-style: italic;
-background-color: var(--color-white) !important;
+  font-style: italic;
+  background-color: var(--color-white) !important;
 }
 
 /* ----------------------------------------------------------------------------- */
-/* NOTES - BOTTOM */
+/* NOTES - BOTTOM
 /* ----------------------------------------------------------------------------- */
 #trilium-app #center-pane .note-detail + .note-list-widget {
-background-color: var(--color-bg);
-border-top: 1px dashed var(--color-text-muted);
-flex-shrink: 0;
-margin-bottom: 0;
-margin-right: 0;
+  background-color: var(--color-bg);
+  border-top: 1px dashed var(--color-text-muted);
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-right: 0;
 }
 #trilium-app #center-pane .title-row .note-title-widget input.note-title.protected {
-text-shadow: none;
-color: var(--color-text-muted) !important;
+  text-shadow: none;
+  color: var(--color-text-muted) !important;
 }
 
 /* ----------------------------------------------------------------------------- */
-/* NOTES - BOTTOM - STATUS BAR */
+/* NOTES - BOTTOM - STATUS BAR
 /* ----------------------------------------------------------------------------- */
 #trilium-app #rest-pane .status-bar {
-border-top: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
 }
 #rest-pane .status-bar,
 #rest-pane .status-bar .status-bar-main-row .breadcrumb,
 #rest-pane .status-bar .status-bar-main-row .breadcrumb button,
 #rest-pane .status-bar .status-bar-main-row .breadcrumb div .breadcrumb-separator span,
 #trilium-app #horizontal-main-container #rest-pane .status-bar .status-bar-main-row .breadcrumb a.tn-link
-{
+ {
   color: var(--color-control-fg);
 }
 #trilium-app #rest-pane .status-bar .bottom-panel-title-bar {
-background-color: var(--color-surface-raised);
+  background-color: var(--color-surface-raised);
 }
 #trilium-app #rest-pane .status-bar .bottom-panel .bottom-panel-title-bar .bottom-panel-title-bar-caption {
-font-weight: 400;
+  font-weight: 400;
 }
 #trilium-app #rest-pane .status-bar .bottom-panel .bottom-panel-title-bar .status-bar-sidebar-link:hover {
-text-decoration: none;
-border-bottom: none;
+  text-decoration: none;
+  border-bottom: none;
 }
 #trilium-app #rest-pane .status-bar .bottom-panel .bottom-panel-content {
-padding-inline: 1.3rem;
+  padding-inline: 1.3rem;
 }
 #trilium-app #rest-pane .status-bar .attribute-list-editor-wrapper .attribute-list-editor {
-color: var(--color-text-code);
-font-family: var(--font-code);
+  color: var(--color-text-code);
+  font-family: var(--font-code);
 }
 #trilium-app #rest-pane .status-bar .attribute-list .inherited-attributes-widget,
 #trilium-app #rest-pane .status-bar .attribute-list .inherited-attributes-widget .selectable-text {
-color: var(--color-text-muted);
-font-family: var(--font-code);
+  color: var(--color-text-muted);
+  font-family: var(--font-code);
 }
 #trilium-app #rest-pane .status-bar > .attribute-list .attributes-panel-label {
-color: var(--color-text-muted);
-font-weight: 500;
-text-transform: uppercase;
-opacity: .8;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: .8;
 }
 #trilium-app #rest-pane .status-bar .status-bar-main-row .breadcrumb .dropdown button {
-color: var(--color-link-note);
-border: 0;
-border-radius: 0;
+  color: var(--color-link-note);
+  border: 0;
+  border-radius: 0;
 }
 
 /* ----------------------------------------------------------------------------- */
-/* NOTES - BOTTOM - List View & Grid View */
+/* NOTES - BOTTOM - List View & Grid View
 /* ----------------------------------------------------------------------------- */
 #trilium-app #center-pane .note-list .note-book-card {
-border: 1px solid var(--color-border);
-border-radius: var(--border-radius-medium);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-medium);
 }
 #trilium-app #center-pane .note-book-card h5.note-book-header {
-border: none;
-color: var(--color-text-secondary);
-padding: 0.2rem 0 0.5rem 0.4rem;
-border-bottom: 1px solid var(--color-border-soft);
+  border: none;
+  color: var(--color-text-secondary);
+  padding: 0.2rem 0 0.5rem 0.4rem;
+  border-bottom: 1px solid var(--color-border-soft);
 }
 .note-list-widget .note-list-widget-content .note-list .note-book-card {
   background-color: var(--color-white);
@@ -852,40 +853,40 @@ border-bottom: 1px solid var(--color-border-soft);
   }
 }
 #trilium-app #center-pane .note-list-wrapper .note-list-container.search-results span.tn-icon + span > span a.note-book-title {
-color: var(--color-text-heading) !important;
-font-weight: var(--font-weight-bold);
-margin-block: 5px;
+  color: var(--color-text-heading) !important;
+  font-weight: var(--font-weight-bold);
+  margin-block: 5px;
 }
 #trilium-app #center-pane .note-list-container.search-results span.tn-icon + span > span small {
-color: var(--color-link-note);
+  color: var(--color-link-note);
 }
 #trilium-app #center-pane .note-list-container.search-results span.tn-icon + span > span small .path-delimiter {
-color: var(--color-text);
+  color: var(--color-text);
 }
 #trilium-app #center-pane .note-list-widget .note-list-container .tn-card-frame.note-book-card.no-tooltip-preview.block-link h5.note-book-header span.tn-icon {
-color: var(--color-text-secondary);
+  color: var(--color-text-secondary);
 }
 
 /* ----------------------------------------------------------------------------- */
-/* SPECIAL NOTE TYPES - BOARD */
+/* SPECIAL NOTE TYPES - BOARD
 /* ----------------------------------------------------------------------------- */
 #trilium-app {
---board-column-border-width: 1px;
---board-focus-outline-plain-color: var(--color-accent);
---_include-note-active-outline-color: var(--color-accent) !important;
---ck-color-focus-border: var(--color-accent) !important;
+  --board-column-border-width: 1px;
+  --board-focus-outline-plain-color: var(--color-accent);
+  --_include-note-active-outline-color: var(--color-accent) !important;
+  --ck-color-focus-border: var(--color-accent) !important;
 }
 #trilium-app
 #trilium-app #center-pane .board-view-container .board-column {
-border-radius: var(--border-radius-medium);
-background-color: var(--color-surface-raised);
+  border-radius: var(--border-radius-medium);
+  background-color: var(--color-surface-raised);
 }
 #trilium-app #center-pane .board-view-container .board-column .column-icon {
-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 /* ----------------------------------------------------------------------------- */
-/* SPECIAL NOTE TYPES - SEARCH RESULTS */
+/* SPECIAL NOTE TYPES - SEARCH RESULTS
 /* ----------------------------------------------------------------------------- */
 .search-results-list .search-result-card-snippet b,
 .search-results-list .search-result-card-badges b {
@@ -893,14 +894,14 @@ color: var(--color-accent);
 }
 
 /* ----------------------------------------------------------------------------- */
-/* CodeMirror */
+/* CodeMirror
 /* ----------------------------------------------------------------------------- */
 #trilium-app #root-widget #rest-pane #center-pane .cm-scroller span {
-font-family: var(--font-code);
+  font-family: var(--font-code);
 }
 #trilium-app #root-widget #rest-pane #center-pane .cm-scroller span.cm-matchingBracket {
-text-decoration: none;
-font-weight: 700;
-color: var(--color-accent) !important;
-border: 1px solid var(--color-border);
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--color-accent) !important;
+  border: 1px solid var(--color-border);
 }
