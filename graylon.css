@@ -63,9 +63,9 @@
   --color-white: #ffffff;
   --color-canvas: #fffefc;
   --color-gray: #cfd2d4;
-  --color-gray-text: #1a1d21;
+  --color-gray-text: #2d3238;
   --color-gray-ink: #565b60;
-  --color-gray-light: #f4f4f2;
+  --color-gray-light: #f7f7f5;
   --color-gray-wash: rgba(180, 184, 188, 0.18);
   --color-gray-light-text: #8b9095;
   --color-gray-medium: #7a8186;
@@ -161,14 +161,23 @@
   --ck-font-family: var(--main-font-family);
   --ck-font-face: var(--main-font-family);
   --ck-color-link-selected-background: var(--color-gray-wash);
-  --ck-content-font-color: var(--color-gray-text);
+
+  --ck-content-font-size: 1rem;
   --main-font-size: 100%;
   --tree-font-size: 100%;
   --detail-font-size: 100%;
   --monospace-font-size: 100%;
+  
   --main-text-color: var(--color-text);
-  --badge-read-only-background-color: var(--color-secondary);
+  --ck-content-font-color: var(--color-gray-text);
   --task-checkbox-done-color: var(--color-secondary);
+  --link-preview-card-title-color: var(--color-link);
+  
+  --badge-read-only-background-color: var(--color-secondary);
+  --badge-share-background-color: var(--color-chip);
+  --peek-button-collapse-background-color: var(--color-surface);
+  --accented-background-color: var(--color-surface);
+  --left-pane-background-color: var(--color-surface);
 }
 
 /* ----------------------------------------------------------------------------- */
@@ -203,9 +212,9 @@ h6) {
 .related-notes-container a,
 .related-notes-container a:hover,
 div.tooltip a,
-li a,
+/*li a,
 li a:visited,
-li a:hover
+li a:hover*/
  {
   color: var(--color-link) !important;
   border-radius: 0;
@@ -276,7 +285,7 @@ a:hover,
 /* LEFT PANE - TREE
 /* ----------------------------------------------------------------------------- */
 #trilium-app #root-widget #left-pane .fancytree-node {
-  border-top: 1px dotted lightgray;
+  border-top: 1px dotted var(--color-border);
   border-radius: 0;
   font-weight: 350;
 }
@@ -286,7 +295,7 @@ a:hover,
   color: var(--color-accent);
 }
 #trilium-app #root-widget #left-pane span.fancytree-node.fancytree-active {
-  background-color: var(--color-gray-wash) !important;
+  background-color: var(--color-surface) !important;
   border: none !important;
   color: var(--color-accent);
 }
@@ -305,6 +314,10 @@ a:hover,
 }
 #trilium-app #root-widget #left-pane .tree-wrapper .tree span.fancytree-node.protected > span.fancytree-custom-icon {
   filter: none;
+}
+/* root item */
+#trilium-app #root-widget #left-pane .tree-wrapper > .tree > ul > li > span.fancytree-folder.fancytree-node {
+  border-top: none;
 }
 
 /* ----------------------------------------------------------------------------- */
@@ -332,13 +345,14 @@ a:hover,
 /* ----------------------------------------------------------------------------- */
 #trilium-app #right-pane .right-pane-tab-body {
   margin-top: 5px;
+  margin-inline: 0.4rem;
 }
 
 /* ----------------------------------------------------------------------------- */
 /* RIGHT PANE - CARDS & WIDGETS
 /* ----------------------------------------------------------------------------- */
 #trilium-app #right-pane .right-pane-tab-body .card.widget {
-  border: 1px dashed var(--color-text-faint) !important;
+  border: 1px dotted var(--color-text-faint) !important;
   border-radius: var(--border-radius-small);
   background-color: var(--color-surface);
   margin: 5px;
@@ -385,12 +399,30 @@ a:hover,
 /* ----------------------------------------------------------------------------- */
 /* RIGHT PANE - CARDS & WIDGETS - BACKLINKS
 /* ----------------------------------------------------------------------------- */
+#trilium-app #right-pane #backlinks .card-body .tn-backlinks-widget .backlinks-items span.backlink-header {
+  display: flex;
+  /*! flex-direction: column; */ 
+}
+#trilium-app #right-pane #backlinks .card-body .tn-backlinks-widget .backlinks-items span.backlink-header span small {
+  order: 1;
+}
+#trilium-app #right-pane #backlinks .card-body .tn-backlinks-widget .backlinks-items span.backlink-header span small .path-delimiter {
+  color: var(--color-text-faint);
+}
+
 #trilium-app #right-pane #backlinks .card-body .tn-backlinks-widget ul.backlinks-items li {
   margin-bottom: 0;
 }
 #trilium-app #right-pane #backlinks .card-body .tn-backlinks-widget ul.backlinks-items li:not(:last-of-type) {
   border-bottom: 1px dotted var(--color-border);
   margin-bottom: .5rem;
+}
+
+#trilium-app #right-pane #backlinks .tn-backlinks-widget .backlinks-items .backlink-excerpt {
+  color: var(--color-text-dim);
+}
+#trilium-app #right-pane #backlinks .tn-backlinks-widget .backlinks-items .backlink-excerpt a.reference-link.backlink-link {
+  color: var(--color-link-note);
 }
 
 /* ----------------------------------------------------------------------------- */
@@ -414,8 +446,7 @@ a:hover,
 #trilium-app #center-pane .card-header .attribute-run-count {
   padding-top: 0;
 }
-#trilium-app :where(.tn-card,
-.tn-card-frame) {
+#trilium-app :where(.tn-card, .tn-card-frame) {
   --card-border-radius: var(--border-radius-medium) !important;
   --card-section-gap: 4px !important;
   --card-background-color: var(--color-surface);
@@ -423,10 +454,27 @@ a:hover,
 #trilium-app .tn-card-frame,
 #trilium-app .tn-card-body .tn-card-section {
   --card-padding-block:5px;
-  --card-padding-inline: 10px;
+  --card-padding-inline: 8px;
   padding: var(--card-padding-block) var(--card-padding-inline);
   /*border: 1px solid var(--color-surface-raised) !important;*/
   /*! background-color: var(--color-surface-raised); */
+  border: none;
+  border-block: 1px solid var(--color-border);
+  border-inline-start: 5px solid var(--color-border);
+}
+#trilium-app .tn-card-body .tn-card-section.expanded {
+  
+}
+#trilium-app .tn-card-body .tn-card-section.expanded h5,
+#trilium-app .tn-card-body .tn-card-section.expanded h5 a,
+#trilium-app .tn-card-body .tn-card-section.expanded h5 button,
+#trilium-app .tn-card-body .tn-card-section.expanded h5 span {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+#trilium-app .tn-card-body .note-content-preview {
+    background-color: var(--color-surface-raised);
 }
 #trilium-app #center-pane .tn-card-frame.note-book-card .note-book-content .rendered-content .ck-content :is(p,
 li,
@@ -581,6 +629,15 @@ div) {
 /* ----------------------------------------------------------------------------- */
 #trilium-app #center-pane .split-note-container-widget .component.note-split.protected.active {
   border: 3px dashed var(--color-slate);
+}
+
+/* ----------------------------------------------------------------------------- */
+/* NOTES - HEADER - CK EDITOR TOOLBAR
+/* ----------------------------------------------------------------------------- */
+#rest-pane .ck.ck-toolbar {
+  border-bottom: 1px solid var(--color-border);
+  border-radius: var(--border-radius-small);
+  box-shadow: var(--shadow-90deg);
 }
 
 /* ----------------------------------------------------------------------------- */
@@ -827,6 +884,10 @@ form) {
 /* ----------------------------------------------------------------------------- */
 /* NOTES - BOTTOM - List View & Grid View
 /* ----------------------------------------------------------------------------- */
+#trilium-app #center-pane .note-list-widget .note-list-widget-content .note-list-wrapper {
+  margin-inline-end: 0;
+}
+
 #trilium-app #center-pane .note-list .note-book-card {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius-medium);
@@ -837,10 +898,10 @@ form) {
   padding: 0.2rem 0 0.5rem 0.4rem;
   border-bottom: 1px solid var(--color-border-soft);
 }
-.note-list-widget .note-list-widget-content .note-list .note-book-card {
+#trilium-app .note-list-widget .note-list-widget-content .note-list .note-book-card {
   background-color: var(--color-white);
 }
-.note-list-widget .note-list-widget-content .note-list .note-book-card:hover {
+#trilium-app .note-list-widget .note-list-widget-content .note-list .note-book-card:hover {
   background-color: var(--color-white);
   box-shadow: var(--shadow-standard);
 }
@@ -891,6 +952,83 @@ form) {
 .search-results-list .search-result-card-snippet b,
 .search-results-list .search-result-card-badges b {
   --note-list-view-search-result-highlight-color: var(--color-accent);
+}
+
+/* ----------------------------------------------------------------------------- */
+/* MODALS
+/* ----------------------------------------------------------------------------- */
+#trilium-app .modal .modal-dialog .modal-content  {
+  background: var(--color-paper-light);
+  border: 1px solid var(--color-brand);
+  color: var(--color-text);
+}
+
+/* ----------------------------------------------------------------------------- */
+/* MODALS - HEADER
+/* ----------------------------------------------------------------------------- */
+#trilium-app .modal .modal-dialog .modal-content .modal-header {
+  background: var(--gradient-blue-light);
+  color: var(--color-text-on-dark);
+  /*! border-radius: inherit; */
+  right: 0;
+}
+#trilium-app .modal .modal-dialog .modal-content .modal-header input.form-control.note-title {
+  color: var(--color-text-on-dark);
+}
+#trilium-app .modal .modal-dialog .modal-content .modal-header .modal-title {
+  flex-grow: 1;
+}
+#trilium-app .modal .modal-dialog .modal-content .modal-header button {
+  color: var(--color-text-on-dark);
+}
+
+/* ----------------------------------------------------------------------------- */
+/* MODALS - BODY - RECENT CHANGES
+/* ----------------------------------------------------------------------------- */
+#trilium-app .modal .modal-dialog .modal-content .recent-changes-content div {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-small);
+  background-color: var(--color-surface-raised);
+  margin: 2px 5px 1.5rem;
+  padding: 1rem;
+}
+#trilium-app .modal .modal-dialog .modal-content .recent-changes-content div ul {
+  margin-block-start: 1rem;
+  margin-block-end: .5rem;
+  padding-left: 0.8rem;
+}
+#trilium-app .modal .modal-dialog .modal-content .recent-changes-content div ul li {
+  border-bottom: 1px dotted var(--color-border);
+  margin-block: .3rem;
+  list-style-type: none;
+  /*! display: flex; */
+  /*! flex-direction: row; */
+}
+#trilium-app .modal .modal-dialog .modal-content .recent-changes-content div ul li.deleted-note span.note-title {
+  text-decoration: line-through;
+  text-decoration-color: var(--color-text-dim);
+  color: var(--color-text-faint);
+}
+#trilium-app .modal .modal-dialog .modal-content .recent-changes-content div ul li:hover {
+  border: 1px dotted var(--color-border);
+  background-color: var(--color-surface);
+}
+#trilium-app .modal .modal-dialog .modal-content .recent-changes-content div ul li .note-path {
+  /*! display: flex; */ 
+  /*! align-items: end; */
+  /*! justify-content: end; */
+}
+#trilium-app .modal .modal-dialog .modal-content .recent-changes-content div ul li > span:first-child {
+  font-family: var(--font-code);
+  font-size: .9rem;
+}
+#trilium-app .modal .modal-dialog .modal-content .recent-changes-content div ul li > span:first-child::after {
+  content: " | ";
+  color: var(--color-border);
+}
+#trilium-app .modal .modal-dialog .modal-content .recent-changes-content b {
+  font-weight: 500;
+  border-bottom: 1px solid var(--color-border);
 }
 
 /* ----------------------------------------------------------------------------- */
